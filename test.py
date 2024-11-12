@@ -38,3 +38,14 @@ num = "950"
 print(num.zfill(4))
 num = "1500"
 print(num.zfill(4))
+name_one = 'NOUR'
+name_two = 'NOUR_ALREZ'
+print(name_one.rjust(20,'@'))
+print(name_two.rjust(20,'@'))
+name_one = 'Nour_Edden'
+name_two = 'NouR_ALrEZ'
+print(name_one.swapcase())
+print(name_two.swapcase())
+msg = "I Love Python And Although Love Elzero Web School"
+print(msg.count('Love'))
+print(name_one.index('o'))
