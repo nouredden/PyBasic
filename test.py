@@ -56,3 +56,12 @@ num = 159.650
 mynum = int(num)
 print(mynum)
 print(type(mynum))
+myFriendsList = ['Ali','Shady','Ahmad','Abdullah','Basel']
+print(myFriendsList[0])
+print(myFriendsList[-5])
+print(myFriendsList[4])
+print(myFriendsList[-1])
+print(myFriendsList[0::2])
+print(myFriendsList[1::2])
+myFriendsList[-2::]=['Elzero','Elzero']
+print(myFriendsList)
