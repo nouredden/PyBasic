@@ -49,3 +49,10 @@ print(name_two.swapcase())
 msg = "I Love Python And Although Love Elzero Web School"
 print(msg.count('Love'))
 print(name_one.index('o'))
+msg = "I <3 Python And Although <3 Elzero Web School"
+msg2 = msg.replace('<3','Love', 1)
+print(msg2)
+num = 159.650
+mynum = int(num)
+print(mynum)
+print(type(mynum))
