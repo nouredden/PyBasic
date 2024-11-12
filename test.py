@@ -96,3 +96,16 @@ a,b,_,d =my_tuple
 print(a)
 print(b)
 print(d)
+my_list = [1, 2, 3, 3, 4, 5, 1]
+myset = set(my_list)
+newlist = list(myset)
+print(newlist)
+print(newlist[0:-1])
+nums = {1, 2, 3}
+letters = {"A", "B", "C"}
+S3 = letters | nums
+print(S3)
+S4 = nums.union(letters)
+print(S4)
+nums.update(letters)
+print(nums)
