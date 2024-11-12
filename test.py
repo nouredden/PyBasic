@@ -25,3 +25,4 @@ print(f"\"Hello \'{name}\', How You Doing \\ \n \"\"\" Your Age Is \"{age}\"\" +
 
 name = 'Elzero'
 print(f"Second letter is : {name[1]} \n Third letter is : {name[2]} \n Last letter is : {name[-1]}")
+print(f" {name[1:4]} \n  {name[0::2]} \n  {name[-2::-2]}")
