@@ -81,3 +81,18 @@ print(myFriendsList.count('Elzero'))
 technologies = ["Html", "CSS", "JS", "Python", ["Django", "Flask", "Web"]]
 for n in technologies[-1]:
     print(n)
+
+name = 'nour', 'ali','abdullah'
+print(name[0])
+print(type(name))
+print(len(name))
+nums = (1, 2, 3)
+letters = ("A", "B", "C")
+t3=nums+letters
+print(t3)
+
+my_tuple = (1, 2, 3, 4)
+a,b,_,d =my_tuple
+print(a)
+print(b)
+print(d)
