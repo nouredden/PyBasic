@@ -17,3 +17,4 @@ mylist.append("tarek")
 print(mylist)
 name , age , country = "NOUR EDDEN", "29" , "SYRIA"
 print(f"Name : {name}\nAge :{age}\nCountry: {country}")
+print(f"Hello My name is {name},I am {age} Years Old, and I am from {country}")
