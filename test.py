@@ -65,3 +65,19 @@ print(myFriendsList[0::2])
 print(myFriendsList[1::2])
 myFriendsList[-2::]=['Elzero','Elzero']
 print(myFriendsList)
+myFriendsList.insert(0,'Tarek')
+myFriendsList.append('Ali')
+print(myFriendsList)
+del myFriendsList[0:2]
+print(myFriendsList)
+myFriendsList.pop()
+print(myFriendsList)
+myFriendsList.sort()
+print(myFriendsList)
+myFriendsList.reverse()
+print(myFriendsList)
+print(len(myFriendsList))
+print(myFriendsList.count('Elzero'))
+technologies = ["Html", "CSS", "JS", "Python", ["Django", "Flask", "Web"]]
+for n in technologies[-1]:
+    print(n)
