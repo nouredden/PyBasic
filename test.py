@@ -15,3 +15,5 @@ mylist = ["nour", "douaa", "zainab", "riyad"]
 print(mylist)
 mylist.append("tarek")
 print(mylist)
+name , age , country = "NOUR EDDEN", "29" , "SYRIA"
+print(name,age,country)
