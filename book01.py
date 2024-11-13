@@ -27,7 +27,16 @@ the triangle equals the square of the hypotenuse. Be sure to assign all three
 variables their correct values and print the length of sideC at the end of the
 program. HINT: Raising a value to the 1/2 power is the same thing as finding
 the square root. Try values 6 and 8 for sideA and sideB."""
-sideA = int(input("Enter the SideA length: "))
-sideB = int(input("Enter the SideB length: "))
-sideC = (sideA**2 + sideB**2)**0.5
-print(f"The length of Pythagorean (sideC) is : {sideC}")
+# sideA = int(input("Enter the SideA length: "))
+# sideB = int(input("Enter the SideB length: "))
+# sideC = (sideA**2 + sideB**2)**0.5
+# input("Press any key to continue...")
+# print(f"The length of Pythagorean (sideC) is : {sideC}")
+name = input("enter your name Please !!")
+print(f"{name[0]} ASCI Value is : {ord(name[0])}")
+print(f"{name[1]} ASCI Value is : {ord(name[1])}")
+print(f"{name[2]} ASCI Value is : {ord(name[2])}")
+print(f"{name[3]} ASCI Value is : {ord(name[3])}")
+Word = input("enter your Word Please !!")
+print(f"your word capitalized is : {Word.upper()}")
+
