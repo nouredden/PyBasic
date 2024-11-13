@@ -32,11 +32,17 @@ the square root. Try values 6 and 8 for sideA and sideB."""
 # sideC = (sideA**2 + sideB**2)**0.5
 # input("Press any key to continue...")
 # print(f"The length of Pythagorean (sideC) is : {sideC}")
-name = input("enter your name Please !!")
-print(f"{name[0]} ASCI Value is : {ord(name[0])}")
-print(f"{name[1]} ASCI Value is : {ord(name[1])}")
-print(f"{name[2]} ASCI Value is : {ord(name[2])}")
-print(f"{name[3]} ASCI Value is : {ord(name[3])}")
-Word = input("enter your Word Please !!")
-print(f"your word capitalized is : {Word.upper()}")
+# name = input("enter your name Please !!")
+# print(f"{name[0]} ASCI Value is : {ord(name[0])}")
+# print(f"{name[1]} ASCI Value is : {ord(name[1])}")
+# print(f"{name[2]} ASCI Value is : {ord(name[2])}")
+# print(f"{name[3]} ASCI Value is : {ord(name[3])}")
+# Word = input("enter your Word Please !!")
+# print(f"your word capitalized is : {Word.upper()}")
 
+miles = float(input("Enter the Total number of miles you drove : "))
+tins = float(input("Enter the Total number of tins filled : "))
+price = float(input("enter the price of gas liter .. "))
+mpt = miles/tins
+cost = mpt*1.609/16*price
+print(f"You got {mpt} miles or {mpt*1.609} kilometers on that tank of gas !! \n and a {mpt/16*1.609} kilometers per liter \n cost per kilometer is{cost}")
