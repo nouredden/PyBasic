@@ -40,9 +40,21 @@ the square root. Try values 6 and 8 for sideA and sideB."""
 # Word = input("enter your Word Please !!")
 # print(f"your word capitalized is : {Word.upper()}")
 
-miles = float(input("Enter the Total number of miles you drove : "))
-tins = float(input("Enter the Total number of tins filled : "))
-price = float(input("enter the price of gas liter .. "))
-mpt = miles/tins
-cost = mpt*1.609/16*price
-print(f"You got {mpt} miles or {mpt*1.609} kilometers on that tank of gas !! \n and a {mpt/16*1.609} kilometers per liter \n cost per kilometer is{cost}")
+# miles = float(input("Enter the Total number of miles you drove : "))
+# tins = float(input("Enter the Total number of tins filled : "))
+# price = float(input("enter the price of gas liter .. "))
+# mpt = miles/tins
+# cost = mpt*1.609/16*price
+# print(f"You got {mpt} miles or {mpt*1.609} kilometers on that tank of gas !! \n and a {mpt/16*1.609} kilometers per liter \n cost per kilometer is{cost}")
+"""4. Write a program that converts US Dollars to a Foreign Currency. You can do this
+by finding the exchange rate on the internet and then prompting for the exchange
+rate in your program. When you run the program it should look exactly like this:
+What i s the amount of US Dollars you wish to convert? 31.67
+What i s the current exchange rate
+(1 US Dollar equals what i n the Foreign Currency)? 0.9825
+The amount in the Foreign Currency is $31.12"""
+
+amount = float(input("What i s the amount of US Dollars you wish to convert? "))
+rate = float(input("What i s the current exchange rate \n (1 US Dollar equals what i n the Foreign Currency)?"))
+result = amount*rate
+print(f"The amount in the Foreign Currency is {result}")
