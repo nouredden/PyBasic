@@ -122,3 +122,38 @@ set_two = {1, 2, 3, 4, 5, 6}
 print(set_one.issubset(set_two))
 
 print("="*55)
+"""Boolians"""
+print(bool("abc"))
+print(bool(123))
+print(bool(["apple", "cherry", "banana"]))
+print(bool(True))
+print(5>3)
+x = 200
+print(isinstance(x, int))
+a = ""
+a1 = ()
+a2 = {}
+a3 = []
+print(bool(a))
+print(bool(a1))
+print(bool(a2))
+print(bool(a3))
+print(bool(False))
+print(bool(0))
+print(bool(""))
+print(bool(None))
+print("="*55)
+HTML = 60
+JS = 60
+CSS = 50
+print(HTML and JS and CSS >= 50)
+
+num_one = 10
+num_two = 20
+num = 20
+print(num > num_one or num > num_two)
+print(num > num_one and num > num_two)
+result = num_one+num_two
+print(result)
+print(result**3)
+print((result**3)%26000)
