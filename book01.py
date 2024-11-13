@@ -66,8 +66,13 @@ help in solving this problem. When you run the program it should look exactly
 like this (except possibly for decimal places in the inches):
 How many centimeters do you want to convert? 127.25
 This i s 1 yards , 1 feet , 2.098425 inches."""
-centimeters = float(input("How many centimeters do you want to convert? "))
-yard = centimeters//91.44
-foot = (centimeters%91.44)//30.48
-inch = ((centimeters%91.44)%30.48)/2.54
-print(f"This is {yard} yards , {foot} feet and {inch} inches .")
+# centimeters = float(input("How many centimeters do you want to convert? "))
+# yard = centimeters//91.44
+# foot = (centimeters%91.44)//30.48
+# inch = ((centimeters%91.44)%30.48)/2.54
+# print(f"This is {yard} yards , {foot} feet and {inch} inches .")
+number = "00111010"
+print(int(number, 2))
+print(bin(58))
+print(hex(58))
+print(oct(58))
