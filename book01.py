@@ -1,22 +1,22 @@
 print("hello")
 print("world")
 
-x = 4.2
-y = 4
-print(x**y)
-print(round(x**y))
+# x = 4.2
+# y = 4
+# print(x**y)
+# print(round(x**y))
 
 # a = int(input("Please enter First number:"))
 # b = int(input("Please enter Second number:"))
 # c = a*b
 # print(f"the multiplication result is: {c}")
 
-x = str (83)
-print (x[0])
-print (x[1])
-y = int (x)
-print (y)
-print(chr(y))
+# x = str (83)
+# print (x[0])
+# print (x[1])
+# y = int (x)
+# print (y)
+# print(chr(y))
 
 """ Practice 1.10
 Write a short program that computes the length of the
@@ -87,12 +87,25 @@ This i s 1 yards , 1 feet , 2.098425 inches."""
 
 print("="*45)
 #Guess and Check
-x = int(input("Enter the First number .. "))
-y = int(input("Enter the Second number .. "))
-z = int(input("Enter the Last number .. "))
-maxNum = x
-if y > maxNum:
-    maxNum = y
-if z > maxNum:
-     maxNum = z
-print(f"{maxNum} is the largest number !!")
+# x = int(input("Enter the First number .. "))
+# y = int(input("Enter the Second number .. "))
+# z = int(input("Enter the Last number .. "))
+# maxNum = x
+# if y > maxNum:
+#     maxNum = y
+# if z > maxNum:
+#      maxNum = z
+# print(f"{maxNum} is the largest number !!")
+"""Practice 2.3 Use the guess and check pattern to determine if a triangle is a
+perfect triangle. A perfect triangle has side lengths that are multiples of 3, 4
+and 5. Ask the user to enter the shortest, middle, and longest sides of a triangle
+and then print “It is a perfect triangle “if it is and “It is not a perfect triangle”
+if it isn’t. You may assume that the side lengths are integers. Let your guess be
+that the message you will print is “It is a perfect triangle”."""
+shortest =int(input("Enter the shortest side length . ."))
+middle =int(input("Enter the middle side length . ."))
+longest =int(input("Enter the longest side length . ."))
+if (shortest%3 == 0 and middle%4 ==0 and longest%5 ==0):
+    print("It is a perfect triangle")
+else:
+    print("It is not a perfect triangle")
