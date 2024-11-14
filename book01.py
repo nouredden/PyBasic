@@ -71,16 +71,28 @@ This i s 1 yards , 1 feet , 2.098425 inches."""
 # foot = (centimeters%91.44)//30.48
 # inch = ((centimeters%91.44)%30.48)/2.54
 # print(f"This is {yard} yards , {foot} feet and {inch} inches .")
-number = "00111010"
-print(int(number, 2))
-print(bin(58))
-print(hex(58))
-print(oct(58))
-print("="*45)
-number = int(input("Enter you number . ."))
-if number % 7 ==0 :
-    print("Your number is diviseble by 7 !!")
-else:
-    print("your number cannot by devided by 7 !!")
+# number = "00111010"
+# print(int(number, 2))
+# print(bin(58))
+# print(hex(58))
+# print(oct(58))
+# print("="*45)
+# number = int(input("Enter you number . ."))
+# if number % 7 ==0 :
+#     print("Your number is diviseble by 7 !!")
+# else:
+#     print("your number cannot by devided by 7 !!")
 
-print("Program Ended")
+# print("Program Ended")
+
+print("="*45)
+#Guess and Check
+x = int(input("Enter the First number .. "))
+y = int(input("Enter the Second number .. "))
+z = int(input("Enter the Last number .. "))
+maxNum = x
+if y > maxNum:
+    maxNum = y
+if z > maxNum:
+     maxNum = z
+print(f"{maxNum} is the largest number !!")
