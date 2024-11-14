@@ -148,16 +148,31 @@ have to write the double qoutations three times at the beggining and the end"""
 # CSS = 50
 # print(HTML and JS and CSS >= 50)
 print("="*55)
-num_one = 10
-num_two = 20
-num = 20
-print(num > num_one or num > num_two)
-print(num > num_one and num > num_two)
-result = num_one+num_two
-print(result)
-print(result**3)
-number2 = result**3%26000
-print(number2)
-print(number2/5)
-print(type(number2/5))
-print(str(number2/5))
+# num_one = 10
+# num_two = 20
+# num = 20
+# print(num > num_one or num > num_two)
+# print(num > num_one and num > num_two)
+# result = num_one+num_two
+# print(result)
+# print(result**3)
+# number2 = result**3%26000
+# print(number2)
+# print(number2/5)
+# print(type(number2/5))
+# print(str(number2/5))
+# print("="*30)
+# name_input = input("Enter your name . .")
+# name = str(name_input).strip()
+# print(f"HELLO {name.capitalize()} welcome to Python world !!")
+# print("="*35)
+# age =int(input("Enter Your Age . ."))
+# if bool(age <= 16):
+#     print("Hello Your Age Is Under 16, Some Articles Is Not Suitable For You")
+# else:
+#     print(f"Hello Your Age Is {age}, All Articles Is Suitable For You")
+firstName = input("Enter your First name . .").strip().capitalize()
+secondName = input("Enter your Second name . .").strip().capitalize()
+print(f"Hello {firstName} {secondName[0]}. ")
+print("="*30)
+

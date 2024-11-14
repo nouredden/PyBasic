@@ -76,3 +76,11 @@ print(int(number, 2))
 print(bin(58))
 print(hex(58))
 print(oct(58))
+print("="*45)
+number = int(input("Enter you number . ."))
+if number % 7 ==0 :
+    print("Your number is diviseble by 7 !!")
+else:
+    print("your number cannot by devided by 7 !!")
+
+print("Program Ended")
