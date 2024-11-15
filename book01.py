@@ -102,10 +102,53 @@ and 5. Ask the user to enter the shortest, middle, and longest sides of a triang
 and then print “It is a perfect triangle “if it is and “It is not a perfect triangle”
 if it isn’t. You may assume that the side lengths are integers. Let your guess be
 that the message you will print is “It is a perfect triangle”."""
-shortest =int(input("Enter the shortest side length . ."))
-middle =int(input("Enter the middle side length . ."))
-longest =int(input("Enter the longest side length . ."))
-if (shortest%3 == 0 and middle%4 ==0 and longest%5 ==0):
-    print("It is a perfect triangle")
-else:
-    print("It is not a perfect triangle")
+# shortest =int(input("Enter the shortest side length . ."))
+# middle =int(input("Enter the middle side length . ."))
+# longest =int(input("Enter the longest side length . ."))
+# if (shortest%3 == 0 and middle%4 ==0 and longest%5 ==0):
+#     print("It is a perfect triangle")
+# else:
+#     print("It is not a perfect triangle")
+
+# top = float(input("Enter the nomenator number . ."))
+# bottom = float(input("Enter the denomenator number . ."))
+# guess = float(input("Enter your Guess . ."))
+
+# result = top / bottom
+# biggest = abs(result)
+# print(result)
+# print(biggest)
+# try:
+#     top =int(input("Enter your Value . ."))
+# except :
+#     print("you did not enter a valid number")
+#     exit(0)
+
+# try :
+#     x = int (input("Please enter an integer:"))
+#     y = int (input("Please enter another integer:"))
+# except:
+#     print("You entered an invalid integer.")
+# print("The product of the two integers is",x*y)
+
+"""Write a program that prints a user’s grade given a percent of points achieved in
+the class. The program should prompt the user to enter his/her percent of points.
+It should then print a letter grade A, A−, B+, B, B−, C+, C, C−, D+, D, D−, F.
+The grading scale is given in Fig. 2.11. Use exception handling to check the input
+from the user to be sure it is valid. Running the program should look like this:
+Please enter your percentage achieved in the class: 92.32
+You earned an A- in the class."""
+try:
+    Grade = float(input("Please enter your percentage achieved in the class:"))
+except ValueError:
+    print("Wrong value !!")
+if Grade >= 93.33:
+    print("You earned an A in the class.")
+elif Grade >= 83.33:
+    print("You earned a B in the class.")
+elif Grade >= 73.33:
+    print("You earned a C in the class.")
+elif Grade >= 63.33:
+    print("You earned a D in the class.")
+elif Grade < 60.00:
+    print("You earned an F in the class. You Failed !!")
