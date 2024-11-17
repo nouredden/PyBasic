@@ -175,15 +175,19 @@ print("="*55)
 # secondName = input("Enter your Second name . .").strip().capitalize()
 # print(f"Hello {firstName} {secondName[0]}. ")
 print("="*30)
-i = 0
-while i < 6:
-    print(f"{i}")
-    i+=1
-print("="*30)
-print('end of program')
+# i = 0
+# while i < 6:
+#     print(f"{i}")
+#     i+=1
+# print("="*30)
+# print('end of program')
 
-adj = ["red", "big", "tasty"]
-fruits = ["apple", "banana", "cherry"]
+# adj = ["red", "big", "tasty"]
+# fruits = ["apple", "banana", "cherry"]
 
-for i in range(len(adj)):
-      print(adj[i],fruits[i])
+# for i in range(len(adj)):
+#       print(adj[i],fruits[i])
+
+
+email = str(input("Enter your email . ."))
+print(f"Hello {email[:email.index("@")]}")
