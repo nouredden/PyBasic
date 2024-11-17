@@ -171,8 +171,19 @@ print("="*55)
 #     print("Hello Your Age Is Under 16, Some Articles Is Not Suitable For You")
 # else:
 #     print(f"Hello Your Age Is {age}, All Articles Is Suitable For You")
-firstName = input("Enter your First name . .").strip().capitalize()
-secondName = input("Enter your Second name . .").strip().capitalize()
-print(f"Hello {firstName} {secondName[0]}. ")
+# firstName = input("Enter your First name . .").strip().capitalize()
+# secondName = input("Enter your Second name . .").strip().capitalize()
+# print(f"Hello {firstName} {secondName[0]}. ")
 print("="*30)
+i = 0
+while i < 6:
+    print(f"{i}")
+    i+=1
+print("="*30)
+print('end of program')
 
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for i in range(len(adj)):
+      print(adj[i],fruits[i])
