@@ -189,5 +189,8 @@ print("="*30)
 #       print(adj[i],fruits[i])
 
 
-email = str(input("Enter your email . ."))
-print(f"Hello {email[:email.index("@")]}")
+# email = str(input("Enter your email . ."))
+# print(f"Hello {email[:email.index("@")]}")
+# print(f"Hello your site is : {email[email.index("@")+ 1:email.index(".")]}")
+# print(f"Hello your TLD is : {email[email.index(".")+1:]}")
+
