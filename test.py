@@ -228,9 +228,14 @@ print("="*30)
 #     print(f"you lived for {days} days")
 # else:
 #     print("invalid value")
-country = input("Input Your Country")
-countries = ["Egypt", "Palestine", "Syria", "Yemen", "KSA", "USA", "Bahrain", "England"]
-price = 100
-discount = 30
-country = country.strip().capitalize()
-print(f"You have a {discount} discount the price is {price - discount}" if country in countries else f" You don't have a discount the price is {price}")
+# country = input("Input Your Country")
+# countries = ["Egypt", "Palestine", "Syria", "Yemen", "KSA", "USA", "Bahrain", "England"]
+# price = 100
+# discount = 30
+# country = country.strip().capitalize()
+# print(f"You have a {discount} discount the price is {price - discount}" if country in countries else f" You don't have a discount the price is {price}")
+
+country = input("Input Your Country: ").strip().capitalize()
+countries = {"Egypt", "Palestine", "Syria", "Yemen", "Bahrain", "England"}
+price, discount = 100, 30
+print(f"You have a {discount} % discount. The price is RM {price - discount}" if country in countries else f"You don't have a discount. The price is RM {price}")
