@@ -193,20 +193,23 @@ print("="*30)
 # print(f"Hello {email[:email.index("@")]}")
 # print(f"Hello your site is : {email[email.index("@")+ 1:email.index(".")]}")
 # print(f"Hello your TLD is : {email[email.index(".")+1:]}")
-print("welcome to basic calculator .. Operations are + , - , * , / ")
-num1 = int(input("Enter First Number . ."))
-num2 = int(input("Enter Second Number . ."))
-Operation = input("Enter First Operation . .")
-Operation = Operation.strip()
-result = 0
-if Operation == "+":
-    result = num1+num2
-elif Operation == "-":
-    result = num1-num2
-elif Operation == "*":
-    result = num1*num2
-elif Operation == "/":
-    result = num1/num2
-else:
-    print("Wrong operation")
-print(f"the Operation {num1}{Operation}{num2} = {result}")
+# print("welcome to basic calculator .. Operations are + , - , * , / ")
+# num1 = int(input("Enter First Number . ."))
+# num2 = int(input("Enter Second Number . ."))
+# Operation = input("Enter First Operation . .")
+# Operation = Operation.strip()
+# result = 0
+# if Operation == "+":
+#     result = num1+num2
+# elif Operation == "-":
+#     result = num1-num2
+# elif Operation == "*":
+#     result = num1*num2
+# elif Operation == "/":
+#     result = num1/num2
+# else:
+#     print("Wrong operation")
+# print(f"the Operation {num1}{Operation}{num2} = {result}")
+age = 17
+if age > 16 : print("App Is Suitable For You")
+else: print("App Is Not Suitable For You")
