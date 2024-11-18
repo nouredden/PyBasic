@@ -217,14 +217,20 @@ print("="*30)
 # if age < 16: print("Movie is not good for you !!")
 # else: print("movie is good for you , Happy watching !!")
 # print("Move is not good for you **" if age < 16 else "Movie is Good For Yout, Enjoy **")
-age = int(input("How old are you ?"))
-if age >= 10 and age < 100:
-    months = age*12
-    weeks = age*52
-    days = age*365
-    print(f"you lived for {age} years")
-    print(f"you lived for {months} months")
-    print(f"you lived for {weeks} weeks")
-    print(f"you lived for {days} days")
-else:
-    print("invalid value")
+# age = int(input("How old are you ?"))
+# if age >= 10 and age < 100:
+#     months = age*12
+#     weeks = age*52
+#     days = age*365
+#     print(f"you lived for {age} years")
+#     print(f"you lived for {months} months")
+#     print(f"you lived for {weeks} weeks")
+#     print(f"you lived for {days} days")
+# else:
+#     print("invalid value")
+country = input("Input Your Country")
+countries = ["Egypt", "Palestine", "Syria", "Yemen", "KSA", "USA", "Bahrain", "England"]
+price = 100
+discount = 30
+country = country.strip().capitalize()
+print(f"You have a {discount} discount the price is {price - discount}" if country in countries else f" You don't have a discount the price is {price}")
