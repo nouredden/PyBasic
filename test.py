@@ -213,3 +213,7 @@ print("="*30)
 age = 17
 if age > 16 : print("App Is Suitable For You")
 else: print("App Is Not Suitable For You")
+"""Short If"""
+if age < 16: print("Movie is not good for you !!")
+else: print("movie is good for you , Happy watching !!")
+print("Move is not good for you **" if age < 16 else "Movie is Good For Yout, Enjoy **")
