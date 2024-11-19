@@ -159,3 +159,11 @@ if numb % 7 == 0 or numb % 6 ==0 or numb % 5 == 0 or numb % 4 ==0 or numb% 3 == 
     print(f"{numb} is prime")
 else:
     print(f"{numb} is not prime")
+dec = oct(numb)
+hec = hex(numb)
+print(dec)
+print(hec)
+print("#"*70)
+print(" Cool Banner ".center(70,"#"))
+print(" written by nour edden alrez ".center(70,"#"))
+print("#"*70)

@@ -240,17 +240,54 @@ print("="*30)
 # price, discount = 100, 30
 # print(f"You have a {discount} % discount. The price is RM {price - discount}" if country in countries else f"You don't have a discount. The price is RM {price}")
 
-num = int(input("Please enter the number . ."))
-if num > 0:
-    print("Good")
-    for a in range(num):
-        a = num-1
-        if a == 6:
-            continue
-        elif a == 0:
-            break
+# num = int(input("Please enter the number . ."))
+# if num > 0:
+#     print("Good")
+#     for a in range(num):
+#         a = num-1
+#         if a == 6:
+#             continue
+#         elif a == 0:
+#             break
+#         else:
+#             print(a)
+#         num -=1
+# else:
+#     print("the number must be greater than 0")
+
+Items = ["Keyboard", "Mouse", "Monitor"]
+normalusers = ["Basel", "Ahmad", "Amro"]
+admins = ["Ali", "Nour", "Hasan"]
+adminPass = "P@ssw0rd"
+
+name = input("Enter your name plz . .").strip().capitalize()
+if name in admins:
+    inpass=input("Enter Your Password")
+    if inpass == adminPass:
+        print(f"welcome {name}")
+        print("choose one of the following options : \n [1] . Add user \n [2] . Add admin user \n [3] . Add item \n [4] . display items")
+        Option = int(input(" write the option number: "))
+        if Option == 1:
+            print("you chose to add a user")
+            newuser =input("enter the new user name . .").strip().capitalize()
+            normalusers.append(newuser)
+        elif Option == 2:
+            print("you chose to add an admin user")
+            newadmin =input("enter the new admin user name . .").strip().capitalize()
+            admins.append(newadmin)
+        elif Option == 3:
+            print("you chose to add an item")
+            newItem =input("enter the new item name . .").strip().capitalize()
+            Items.append(newItem)
+            print(f"{newItem} has been added to the Items list ")
+        elif Option == 4:
+            print("you chose to display items")
+            for a in Items:
+                print(a)
         else:
-            print(a)
-        num -=1
+            print("Wrong choice !!")
+    else:
+        print("Wrong Password !!")
 else:
-    print("the number must be greater than 0")
+    print("You are not an Admin")
+
