@@ -265,16 +265,18 @@ if name in admins:
     inpass=input("Enter Your Password")
     if inpass == adminPass:
         print(f"welcome {name}")
-        print("choose one of the following options : \n [1] . Add user \n [2] . Add admin user \n [3] . Add item \n [4] . display items")
+        print("choose one of the following options : \n [1] . Add user \n [2] . Add admin user \n [3] . Add item \n [4] . display items \n [5] . Remove User / Admin / Item")
         Option = int(input(" write the option number: "))
         if Option == 1:
             print("you chose to add a user")
             newuser =input("enter the new user name . .").strip().capitalize()
             normalusers.append(newuser)
+            print(f"{newuser} has been added to the normal Users list ")
         elif Option == 2:
             print("you chose to add an admin user")
             newadmin =input("enter the new admin user name . .").strip().capitalize()
             admins.append(newadmin)
+            print(f"{newadmin} has been added to the admins list ")
         elif Option == 3:
             print("you chose to add an item")
             newItem =input("enter the new item name . .").strip().capitalize()
@@ -284,6 +286,29 @@ if name in admins:
             print("you chose to display items")
             for a in Items:
                 print(a)
+        elif Option == 5:
+            Remove = input(" Enter the name of the User/Admin/Item you want to remove . .").strip().capitalize()
+            Answer = input("Do you really want to remove this? [Y/N]")
+            if Answer == "Y" or Answer == "y" or Answer == "yes":
+                if Remove in Items:
+                    Items.remove(Remove)
+                    print(f"Item {Remove} has been removed")
+                    for a in Items:
+                        print(a)
+                elif Remove in normalusers:
+                    normalusers.remove(Remove)
+                    print(f"The User {Remove} has been removed")
+                    for a in normalusers:
+                        print(a)
+                elif Remove in admins:
+                    admins.remove(Remove)
+                    print(f"the admin {Remove} has been removed")
+                    for a in admins:
+                        print(a)
+                else:
+                    print(f"the {Remove} does not exist !!")
+            else:
+                print(f" the {Remove} hasn't been removed")
         else:
             print("Wrong choice !!")
     else:
