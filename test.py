@@ -265,7 +265,7 @@ if name in admins:
     inpass=input("Enter Your Password")
     if inpass == adminPass:
         print(f"welcome {name}")
-        print("choose one of the following options : \n [1] . Add user \n [2] . Add admin user \n [3] . Add item \n [4] . display items \n [5] . Remove User / Admin / Item")
+        print("choose one of the following options : \n [1] . Add user \n [2] . Add admin user \n [3] . Add item \n [4] . display items \n [5] . Remove User / Admin / Item \n [6] . To Update an Item")
         Option = int(input(" write the option number: "))
         if Option == 1:
             print("you chose to add a user")
@@ -309,6 +309,15 @@ if name in admins:
                     print(f"the {Remove} does not exist !!")
             else:
                 print(f" the {Remove} hasn't been removed")
+        elif Option == 6:
+            print(" did you just press 6 !! ")
+            updateValue = input("what do you wanna update ?").strip().capitalize()
+            if updateValue in Items:
+                newValue =input(" Enter the new value .  .")
+                Items[Items.index(updateValue)]= newValue
+                print("Items has been updated .")
+                for a in Items:
+                    print(a)
         else:
             print("Wrong choice !!")
     else:
