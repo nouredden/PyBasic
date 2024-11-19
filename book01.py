@@ -138,17 +138,24 @@ The grading scale is given in Fig. 2.11. Use exception handling to check the inp
 from the user to be sure it is valid. Running the program should look like this:
 Please enter your percentage achieved in the class: 92.32
 You earned an A- in the class."""
-try:
-    Grade = float(input("Please enter your percentage achieved in the class:"))
-except ValueError:
-    print("Wrong value !!")
-if Grade >= 93.33:
-    print("You earned an A in the class.")
-elif Grade >= 83.33:
-    print("You earned a B in the class.")
-elif Grade >= 73.33:
-    print("You earned a C in the class.")
-elif Grade >= 63.33:
-    print("You earned a D in the class.")
-elif Grade < 60.00:
-    print("You earned an F in the class. You Failed !!")
+# try:
+#     Grade = float(input("Please enter your percentage achieved in the class:"))
+# except ValueError:
+#     print("Wrong value !!")
+# if Grade >= 93.33:
+#     print("You earned an A in the class.")
+# elif Grade >= 83.33:
+#     print("You earned a B in the class.")
+# elif Grade >= 73.33:
+#     print("You earned a C in the class.")
+# elif Grade >= 63.33:
+#     print("You earned a D in the class.")
+# elif Grade < 60.00:
+#     print("You earned an F in the class. You Failed !!")
+sqr=50**0.5
+numb = int(input("Enter your number less than 50!!"))
+print(sqr)
+if numb % 7 == 0 or numb % 6 ==0 or numb % 5 == 0 or numb % 4 ==0 or numb% 3 == 0 or numb % 2 ==0:
+    print(f"{numb} is prime")
+else:
+    print(f"{numb} is not prime")

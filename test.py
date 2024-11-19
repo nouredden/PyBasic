@@ -235,7 +235,22 @@ print("="*30)
 # country = country.strip().capitalize()
 # print(f"You have a {discount} discount the price is {price - discount}" if country in countries else f" You don't have a discount the price is {price}")
 
-country = input("Input Your Country: ").strip().capitalize()
-countries = {"Egypt", "Palestine", "Syria", "Yemen", "Bahrain", "England"}
-price, discount = 100, 30
-print(f"You have a {discount} % discount. The price is RM {price - discount}" if country in countries else f"You don't have a discount. The price is RM {price}")
+# country = input("Input Your Country: ").strip().capitalize()
+# countries = {"Egypt", "Palestine", "Syria", "Yemen", "Bahrain", "England"}
+# price, discount = 100, 30
+# print(f"You have a {discount} % discount. The price is RM {price - discount}" if country in countries else f"You don't have a discount. The price is RM {price}")
+
+num = int(input("Please enter the number . ."))
+if num > 0:
+    print("Good")
+    for a in range(num):
+        a = num-1
+        if a == 6:
+            continue
+        elif a == 0:
+            break
+        else:
+            print(a)
+        num -=1
+else:
+    print("the number must be greater than 0")
