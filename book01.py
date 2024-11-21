@@ -173,7 +173,12 @@ You earned an A- in the class."""
 #     print(c)
 # print("\nDone")
 Mylist = []
-shouOsmo =input("please Enter ShouOsmo !!")
+shouOsmo =input("please Enter ShouOsmo !!").split()
 for i in range(len(shouOsmo)):
     Mylist.append(shouOsmo[i])
+Mylist[0] = Mylist[3]
+Mylist[1] = Mylist[4]
+Mylist[4] = Mylist[2]
+Mylist[2] = "I"
+Mylist[3] = "am"
 print(Mylist)
