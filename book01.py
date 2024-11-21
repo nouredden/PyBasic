@@ -172,13 +172,28 @@ You earned an A- in the class."""
 # for c in Stro :
 #     print(c)
 # print("\nDone")
-Mylist = []
-shouOsmo =input("please Enter ShouOsmo !!").split()
-for i in range(len(shouOsmo)):
-    Mylist.append(shouOsmo[i])
-Mylist[0] = Mylist[3]
-Mylist[1] = Mylist[4]
-Mylist[4] = Mylist[2]
-Mylist[2] = "I"
-Mylist[3] = "am"
-print(Mylist)
+# Mylist = []
+# shouOsmo =input("please Enter ShouOsmo !!").split()
+# for i in range(len(shouOsmo)):
+#     Mylist.append(shouOsmo[i])
+# Mylist[0] = Mylist[3]
+# Mylist[1] = Mylist[4]
+# Mylist[4] = Mylist[2]
+# Mylist[2] = "I"
+# Mylist[3] = "am"
+# print(Mylist)
+
+# readUserInput = input("please enter a sequense of integers").split()
+# countER = 0
+# for a in readUserInput:
+#     countER+=1
+# print(f"there were {countER} Integers entered")
+# numBer = 5
+# while numBer != 0:
+#     numBer*=numBer-1
+# print(numBer)
+filename = input("Enter the file name you want to cat ")
+catfile = open(filename, "r")
+for line in catfile:
+    print(line)
+catfile.close()
