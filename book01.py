@@ -172,5 +172,8 @@ You earned an A- in the class."""
 # for c in Stro :
 #     print(c)
 # print("\nDone")
-for i in range(5):
-    print(i)
+Mylist = []
+shouOsmo =input("please Enter ShouOsmo !!")
+for i in range(len(shouOsmo)):
+    Mylist.append(shouOsmo[i])
+print(Mylist)
