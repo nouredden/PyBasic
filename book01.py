@@ -152,18 +152,25 @@ You earned an A- in the class."""
 #     print("You earned a D in the class.")
 # elif Grade < 60.00:
 #     print("You earned an F in the class. You Failed !!")
-sqr=50**0.5
-numb = int(input("Enter your number less than 50!!"))
-print(sqr)
-if numb % 7 == 0 or numb % 6 ==0 or numb % 5 == 0 or numb % 4 ==0 or numb% 3 == 0 or numb % 2 ==0:
-    print(f"{numb} is prime")
-else:
-    print(f"{numb} is not prime")
-dec = oct(numb)
-hec = hex(numb)
-print(dec)
-print(hec)
-print("#"*70)
-print(" Cool Banner ".center(70,"#"))
-print(" written by nour edden alrez ".center(70,"#"))
-print("#"*70)
+# sqr=50**0.5
+# numb = int(input("Enter your number less than 50!!"))
+# print(sqr)
+# if numb % 7 == 0 or numb % 6 ==0 or numb % 5 == 0 or numb % 4 ==0 or numb% 3 == 0 or numb % 2 ==0:
+#     print(f"{numb} is prime")
+# else:
+#     print(f"{numb} is not prime")
+# dec = oct(numb)
+# hec = hex(numb)
+# print(dec)
+# print(hec)
+# print("#"*70)
+# print(" Cool Banner ".center(70,"#"))
+# print(" written by nour edden alrez ".center(70,"#"))
+# print("#"*70)
+
+# Stro = input("Enter your string >> ..").upper()
+# for c in Stro :
+#     print(c)
+# print("\nDone")
+for i in range(5):
+    print(i)
