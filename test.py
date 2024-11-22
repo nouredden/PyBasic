@@ -255,73 +255,82 @@ print("="*30)
 # else:
 #     print("the number must be greater than 0")
 
-Items = ["Keyboard", "Mouse", "Monitor"]
-normalusers = ["Basel", "Ahmad", "Amro"]
-admins = ["Ali", "Nour", "Hasan"]
-adminPass = "P@ssw0rd"
+# Items = ["Keyboard", "Mouse", "Monitor"]
+# normalusers = ["Basel", "Ahmad", "Amro"]
+# admins = ["Ali", "Nour", "Hasan"]
+# adminPass = "P@ssw0rd"
 
-name = input("Enter your name plz . .").strip().capitalize()
-if name in admins:
-    inpass=input("Enter Your Password")
-    if inpass == adminPass:
-        print(f"welcome {name}")
-        print("choose one of the following options : \n [1] . Add user \n [2] . Add admin user \n [3] . Add item \n [4] . display items \n [5] . Remove User / Admin / Item \n [6] . To Update an Item")
-        Option = int(input(" write the option number: "))
-        if Option == 1:
-            print("you chose to add a user")
-            newuser =input("enter the new user name . .").strip().capitalize()
-            normalusers.append(newuser)
-            print(f"{newuser} has been added to the normal Users list ")
-        elif Option == 2:
-            print("you chose to add an admin user")
-            newadmin =input("enter the new admin user name . .").strip().capitalize()
-            admins.append(newadmin)
-            print(f"{newadmin} has been added to the admins list ")
-        elif Option == 3:
-            print("you chose to add an item")
-            newItem =input("enter the new item name . .").strip().capitalize()
-            Items.append(newItem)
-            print(f"{newItem} has been added to the Items list ")
-        elif Option == 4:
-            print("you chose to display items")
-            for a in Items:
-                print(a)
-        elif Option == 5:
-            Remove = input(" Enter the name of the User/Admin/Item you want to remove . .").strip().capitalize()
-            Answer = input("Do you really want to remove this? [Y/N]")
-            if Answer == "Y" or Answer == "y" or Answer == "yes":
-                if Remove in Items:
-                    Items.remove(Remove)
-                    print(f"Item {Remove} has been removed")
-                    for a in Items:
-                        print(a)
-                elif Remove in normalusers:
-                    normalusers.remove(Remove)
-                    print(f"The User {Remove} has been removed")
-                    for a in normalusers:
-                        print(a)
-                elif Remove in admins:
-                    admins.remove(Remove)
-                    print(f"the admin {Remove} has been removed")
-                    for a in admins:
-                        print(a)
-                else:
-                    print(f"the {Remove} does not exist !!")
-            else:
-                print(f" the {Remove} hasn't been removed")
-        elif Option == 6:
-            print(" did you just press 6 !! ")
-            updateValue = input("what do you wanna update ?").strip().capitalize()
-            if updateValue in Items:
-                newValue =input(" Enter the new value .  .")
-                Items[Items.index(updateValue)]= newValue
-                print("Items has been updated .")
-                for a in Items:
-                    print(a)
-        else:
-            print("Wrong choice !!")
-    else:
-        print("Wrong Password !!")
+# name = input("Enter your name plz . .").strip().capitalize()
+# if name in admins:
+#     inpass=input("Enter Your Password")
+#     if inpass == adminPass:
+#         print(f"welcome {name}")
+#         print("choose one of the following options : \n [1] . Add user \n [2] . Add admin user \n [3] . Add item \n [4] . display items \n [5] . Remove User / Admin / Item \n [6] . To Update an Item")
+#         Option = int(input(" write the option number: "))
+#         if Option == 1:
+#             print("you chose to add a user")
+#             newuser =input("enter the new user name . .").strip().capitalize()
+#             normalusers.append(newuser)
+#             print(f"{newuser} has been added to the normal Users list ")
+#         elif Option == 2:
+#             print("you chose to add an admin user")
+#             newadmin =input("enter the new admin user name . .").strip().capitalize()
+#             admins.append(newadmin)
+#             print(f"{newadmin} has been added to the admins list ")
+#         elif Option == 3:
+#             print("you chose to add an item")
+#             newItem =input("enter the new item name . .").strip().capitalize()
+#             Items.append(newItem)
+#             print(f"{newItem} has been added to the Items list ")
+#         elif Option == 4:
+#             print("you chose to display items")
+#             for a in Items:
+#                 print(a)
+#         elif Option == 5:
+#             Remove = input(" Enter the name of the User/Admin/Item you want to remove . .").strip().capitalize()
+#             Answer = input("Do you really want to remove this? [Y/N]")
+#             if Answer == "Y" or Answer == "y" or Answer == "yes":
+#                 if Remove in Items:
+#                     Items.remove(Remove)
+#                     print(f"Item {Remove} has been removed")
+#                     for a in Items:
+#                         print(a)
+#                 elif Remove in normalusers:
+#                     normalusers.remove(Remove)
+#                     print(f"The User {Remove} has been removed")
+#                     for a in normalusers:
+#                         print(a)
+#                 elif Remove in admins:
+#                     admins.remove(Remove)
+#                     print(f"the admin {Remove} has been removed")
+#                     for a in admins:
+#                         print(a)
+#                 else:
+#                     print(f"the {Remove} does not exist !!")
+#             else:
+#                 print(f" the {Remove} hasn't been removed")
+#         elif Option == 6:
+#             print(" did you just press 6 !! ")
+#             updateValue = input("what do you wanna update ?").strip().capitalize()
+#             if updateValue in Items:
+#                 newValue =input(" Enter the new value .  .")
+#                 Items[Items.index(updateValue)]= newValue
+#                 print("Items has been updated .")
+#                 for a in Items:
+#                     print(a)
+#         else:
+#             print("Wrong choice !!")
+#     else:
+#         print("Wrong Password !!")
+# else:
+#     print("You are not an Admin")
+
+num = int(input("Enter your number"))
+if num <= 0:
+    print("negative number")
 else:
-    print("You are not an Admin")
-
+    num-=1
+    while num > 0:
+        print(num)
+        num-=1
+        
