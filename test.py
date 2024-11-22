@@ -325,12 +325,15 @@ print("="*30)
 # else:
 #     print("You are not an Admin")
 
-num = int(input("Enter your number"))
-if num <= 0:
-    print("negative number")
-else:
-    num-=1
-    while num > 0:
-        print(num)
-        num-=1
+# num = int(input("Enter your number"))
+# if num <= 0:
+#     print("negative number")
+# else:
+#     num-=1
+#     while num > 0:
+#         print(num)
+        # num-=1
+friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
+
+
         
