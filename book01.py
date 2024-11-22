@@ -192,8 +192,15 @@ You earned an A- in the class."""
 # while numBer != 0:
 #     numBer*=numBer-1
 # print(numBer)
-filename = input("Enter the file name you want to cat ")
-catfile = open(filename, "r")
-for line in catfile:
-    print(line)
-catfile.close()
+# filename = input("Enter the file name you want to cat ")
+# catfile = open(filename, "r")
+# for line in catfile:
+#     print(line.strip())
+# catfile.close()
+filename = input("Enter the file name you want to edit ")
+yourName = input("Tell me your name ..")
+yourAge = input("Tell me your age >.")
+openFile = open(filename,"w")
+openFile.write("Hello "+yourName+", it is nice to meet you \n")
+openFile.write("your age is : "+yourAge)
+openFile.close()

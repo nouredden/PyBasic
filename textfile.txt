@@ -1,7 +1,2 @@
-Hello 
-this 
-is 
-a test
-text file 
-to test
-python
+Hello Nour Edden, it is nice to meet you 
+your age is : 29
