@@ -192,8 +192,8 @@ You earned an A- in the class."""
 # while numBer != 0:
 #     numBer*=numBer-1
 # print(numBer)
-# filename = input("Enter the file name you want to cat ")
-# catfile = open(filename, "r")
-# for line in catfile:
-#     print(line)
-# catfile.close()
+filename = input("Enter the file name you want to cat ")
+catfile = open(filename, "r")
+for line in catfile:
+    print(line)
+catfile.close()
