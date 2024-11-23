@@ -204,3 +204,19 @@ You earned an A- in the class."""
 # openFile.write("Hello "+yourName+", it is nice to meet you \n")
 # openFile.write("your age is : "+yourAge)
 # openFile.close()
+phonebook = ["Alice", "Bob", "Charlie", "Diana"]
+name_to_find = "Charlie"
+
+found = False
+index = 0
+
+while index < len(phonebook) and not found:
+    if phonebook[index] == name_to_find:
+        found = True
+    else:
+        index += 1
+
+if found:
+    print(f"{name_to_find} found at index {index}.")
+else:
+    print(f"{name_to_find} not found.")

@@ -335,9 +335,13 @@ print("="*30)
         # num-=1
 friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
 
-x = 0
-while x < len(friends):
-    print(friends[x])
-    x+=1
-#to print the last element
-print(friends[len(friends)-1])
+# x = 0
+# while x < len(friends):
+#     print(friends[x])
+#     x+=1
+# #to print the last element
+# print(friends[len(friends)-1])
+# y = len(friends)-1
+# while y >= 0:
+#     print(friends[y])
+#     y-=1
