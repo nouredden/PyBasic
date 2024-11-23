@@ -339,3 +339,5 @@ x = 0
 while x < len(friends):
     print(friends[x])
     x+=1
+#to print the last element
+print(friends[len(friends)-1])
