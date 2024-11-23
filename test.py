@@ -335,5 +335,7 @@ print("="*30)
         # num-=1
 friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
 
-
-        
+x = 0
+while x < len(friends):
+    print(friends[x])
+    x+=1
