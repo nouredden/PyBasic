@@ -204,19 +204,36 @@ You earned an A- in the class."""
 # openFile.write("Hello "+yourName+", it is nice to meet you \n")
 # openFile.write("your age is : "+yourAge)
 # openFile.close()
-phonebook = ["Alice", "Bob", "Charlie", "Diana"]
-name_to_find = "Charlie"
+# phonebook = ["Alice", "Bob", "Charlie", "Diana"]
+# name_to_find = "Charlie"
 
-found = False
-index = 0
+# found = False
+# index = 0
 
-while index < len(phonebook) and not found:
-    if phonebook[index] == name_to_find:
-        found = True
-    else:
-        index += 1
+# while index < len(phonebook) and not found:
+#     if phonebook[index] == name_to_find:
+#         found = True
+#     else:
+#         index += 1
 
-if found:
-    print(f"{name_to_find} found at index {index}.")
-else:
-    print(f"{name_to_find} not found.")
+# if found:
+#     print(f"{name_to_find} found at index {index}.")
+# else:
+#     print(f"{name_to_find} not found.")
+
+# List example (mutable)
+# my_list = [1, 2, 3]
+# my_list[1] = 99  # Modifies the list
+# print(my_list)   # Output: [1, 99, 3]
+
+# # String example (immutable)
+# my_string = "hello"
+# # my_string[1] = "a"  # This would raise an error
+# new_string = my_string.replace("e", "a")  # Creates a new string
+# print(new_string)  # Output: "hallo"
+# myList = []
+# for i in range(100):
+#     if i % 2 != 0 and i % 3 != 0 and i % 4 != 0 and i % 5 != 0 and i % 6 !=0:
+#         myList.append(i)
+# for j in myList:
+#     print(j)
