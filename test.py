@@ -345,3 +345,6 @@ friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
 # while y >= 0:
 #     print(friends[y])
 #     y-=1
+skills = {"HTML": "50%", "CSS":"30%", "JS":"84%", "Python":"80%"}
+for skill in skills:
+    print(f"My progress in {skill} is : {skills[skill]}")
