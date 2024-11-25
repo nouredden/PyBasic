@@ -333,7 +333,7 @@ print("="*30)
 #     while num > 0:
 #         print(num)
         # num-=1
-friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
+# friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
 
 # x = 0
 # while x < len(friends):
@@ -345,7 +345,16 @@ friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
 # while y >= 0:
 #     print(friends[y])
 #     y-=1
-skills = {"HTML": "50%", "CSS":"30%", "JS":"84%", "Python":"80%"}
-for skill in skills:
-    print(f"My progress in {skill} is : {skills[skill]}")
-    print(f"My progress in {skill} is : {skills.get(skill)}")
+myFrinds =[]
+seats = 4
+for n in range(seats):
+    AddF = input("Enter your friend name here :  ").strip().capitalize()
+    if AddF == AddF.upper() :
+        print("Error")
+    elif len(myFrinds) <= seats:
+        myFrinds.append(AddF)
+        print(f"{AddF} has been Capitalized and Added to the Friends list")
+        print(f"Only {seats - len(myFrinds)} more spaces left in the list")
+    else:
+        print("the list is full !!")
+print(myFrinds)
