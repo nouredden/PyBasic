@@ -348,3 +348,4 @@ friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
 skills = {"HTML": "50%", "CSS":"30%", "JS":"84%", "Python":"80%"}
 for skill in skills:
     print(f"My progress in {skill} is : {skills[skill]}")
+    print(f"My progress in {skill} is : {skills.get(skill)}")
