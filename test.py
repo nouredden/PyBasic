@@ -371,4 +371,4 @@ for n in range(1,21):
     if n == 6 or n == 8 or n == 12:
         continue
     print(str(n).zfill(2))
-print('end of loop')
+print('All Numbers printed')
