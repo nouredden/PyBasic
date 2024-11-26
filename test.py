@@ -471,3 +471,10 @@ def show_skills (name, *args):
         print(f" - {skill}")
 
 show_skills("Osama", "HTML", "CSS", "JS", "Python")
+
+print("*"*48)
+
+def say_hello(name="Jon doe", age="18" , country = "Anywhere"):
+    print(f"Hello {name} \n you are {age} year old \n you are from : {country}")
+
+say_hello()
