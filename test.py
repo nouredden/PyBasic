@@ -372,3 +372,21 @@ for n in range(1,21):
         continue
     print(str(n).zfill(2))
 print('All Numbers printed')
+
+my_ranks = {
+  'Math': 'A',
+  "Science": 'B',
+  'Drawing': 'A',
+  'Sports': 'C'
+}
+TotalPoints =0
+for subject,rank in my_ranks.items():
+    if rank == 'A':
+        Points = 90
+    elif rank == 'B':
+        Points = 80
+    elif rank == 'C':
+        Points = 60
+    TotalPoints +=Points
+    print(f"my rank in {subject} is {rank} and Equal to {Points} Points")
+print(f"Total Points is {TotalPoints}")
