@@ -390,7 +390,7 @@ for subject,rank in my_ranks.items():
     TotalPoints +=Points
     print(f"my rank in {subject} is {rank} and Equal to {Points} Points")
 print(f"Total Points is {TotalPoints}")
-print("="*44)
+print("="*48)
 students = {
   "Ahmed": {
     "Math": "A",
@@ -429,3 +429,4 @@ for Student, StudentItems in students.items():
         TotalPoints +=Points
         print(f"{Student} rank in {subject} is {rank} and Equal to {Points} Points")
     print(f"Total Points is {TotalPoints}")
+    print("="*48)
