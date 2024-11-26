@@ -390,3 +390,42 @@ for subject,rank in my_ranks.items():
     TotalPoints +=Points
     print(f"my rank in {subject} is {rank} and Equal to {Points} Points")
 print(f"Total Points is {TotalPoints}")
+print("="*44)
+students = {
+  "Ahmed": {
+    "Math": "A",
+    "Science": "D",
+    "Draw": "B",
+    "Sports": "C",
+    "Thinking": "A"
+  },
+  "Sayed": {
+    "Math": "B",
+    "Science": "B",
+    "Draw": "B",
+    "Sports": "D",
+    "Thinking": "A"
+  },
+  "Mahmoud": {
+    "Math": "D",
+    "Science": "A",
+    "Draw": "A",
+    "Sports": "B",
+    "Thinking": "B"
+  }
+}
+for Student, StudentItems in students.items():
+    TotalPoints =0
+    print(f"Student name is : {Student}")
+    for subject,rank in StudentItems.items():
+        if rank == 'A':
+            Points = 90
+        elif rank == 'B':
+            Points = 80
+        elif rank == 'C':
+            Points = 60
+        elif rank == 'D':
+            Points = 40
+        TotalPoints +=Points
+        print(f"{Student} rank in {subject} is {rank} and Equal to {Points} Points")
+    print(f"Total Points is {TotalPoints}")
