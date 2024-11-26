@@ -431,16 +431,36 @@ for Student, StudentItems in students.items():
     print(f"Total Points is {TotalPoints}")
     print("="*48)
 print("*"*50)
-num_1 =int(input("Enter the First Number ! !"))
-num_2 =int(input("Enter the Second Number ! !"))
-Oper =input("Enter Operation (\"1\" for Addition , \"2\" for Subtraction , \"3\" for Division) ! !")
-def Calculate (x,y,o):
-    result =0
-    if o == '1':
-        result = x+y
-    elif o == '2':
-        result = x-y
-    elif o == '3':
-        result = x/y
-    return result
-print(Calculate(num_1,num_2,Oper))
+# num_1 =int(input("Enter the First Number ! !"))
+# num_2 =int(input("Enter the Second Number ! !"))
+# Oper =input("Enter Operation (\"1\" for Addition , \"2\" for Subtraction , \"3\" for Division) ! !")
+# def Calculate (x,y,o):
+#     result =0
+#     if o == '1':
+#         result = x+y
+#     elif o == '2':
+#         result = x-y
+#     elif o == '3':
+#         result = x/y
+#     return result
+# print(Calculate(num_1,num_2,Oper))
+
+# numb =int(input("Enter the Numbers ! !"))
+# def additions(*n):
+#     for num in n:
+#         print(n)
+# additions(numb)
+def addition(*args):
+    total = 0
+    for num in args:
+        if num == 10:
+            continue  # Skip 10
+        elif num == 5:
+            total -= num  # Subtract 5
+        else:
+            total += num  # Add other numbers
+    return total
+
+# Tests
+print(addition(10, 20, 30, 10, 15))  # 65
+print(addition(10, 20, 30, 10, 15, 5, 100))  # 160
