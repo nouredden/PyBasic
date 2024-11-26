@@ -345,16 +345,24 @@ print("="*30)
 # while y >= 0:
 #     print(friends[y])
 #     y-=1
-myFrinds =[]
-seats = 4
-for n in range(seats):
-    AddF = input("Enter your friend name here :  ").strip().capitalize()
-    if AddF == AddF.upper() :
-        print("Error")
-    elif len(myFrinds) <= seats:
-        myFrinds.append(AddF)
-        print(f"{AddF} has been Capitalized and Added to the Friends list")
-        print(f"Only {seats - len(myFrinds)} more spaces left in the list")
-    else:
-        print("the list is full !!")
-print(myFrinds)
+# myFrinds =[]
+# seats = 4
+# for n in range(seats):
+#     AddF = input("Enter your friend name here :  ").strip().capitalize()
+#     if AddF == AddF.upper() :
+#         print("Error")
+#     elif len(myFrinds) <= seats:
+#         myFrinds.append(AddF)
+#         print(f"{AddF} has been Capitalized and Added to the Friends list")
+#         print(f"Only {seats - len(myFrinds)} more spaces left in the list")
+#     else:
+#         print("the list is full !!")
+# print(myFrinds)
+
+
+my_nums = [15, 81, 5, 17, 20, 21, 13]
+my_nums.sort()
+my_nums.reverse()
+for n in my_nums:
+    print(f"#{my_nums.index(n)+1} => {n}")
+print("end of LoOp")
