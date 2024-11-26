@@ -464,3 +464,10 @@ def addition(*args):
 # Tests
 print(addition(10, 20, 30, 10, 15))  # 65
 print(addition(10, 20, 30, 10, 15, 5, 100))  # 160
+
+def show_skills (name, *args):
+    print(f"Hello {name} : your skilles are")
+    for skill in args:
+        print(f" - {skill}")
+
+show_skills("Osama", "HTML", "CSS", "JS", "Python")
