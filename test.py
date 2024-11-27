@@ -478,3 +478,13 @@ def say_hello(name="Jon doe", age="18" , country = "Anywhere"):
     print(f"Hello {name} \n you are {age} year old \n you are from : {country}")
 
 say_hello()
+print("+"*48)
+def functionmywrod (word):
+    if len(word) == 1:
+        return word
+    print(word)
+    if word[0] == word[1]:
+        return functionmywrod(word[1:])
+    print(word)
+    return word[0]+functionmywrod(word[1:])
+print(functionmywrod("mmuhammad"))
