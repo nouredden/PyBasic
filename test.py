@@ -1,3 +1,4 @@
+import os
 # this is a comment
 """this is a 
 multiple line c
@@ -488,3 +489,4 @@ def functionmywrod (word):
     print(word)
     return word[0]+functionmywrod(word[1:])
 print(functionmywrod("mmuhammad"))
+print(os.getcwd())
